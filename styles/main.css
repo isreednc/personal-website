@@ -1,13 +1,14 @@
 :root {
     --background-color: #009E95;
     --white-color: #F5F5F5;
-    --grey-color: #7A7A7A;   
+    --grey-color: #7A7A7A;
+    --light-grey-color: lightgrey;   
 }
 
 body {
     height: 100%;
     margin: 0;
-    background-color: black;
+    background-color: tan;
     font-family: "PT Sans Narrow", sans-serif;
     font-weight: 700;
 }
@@ -20,10 +21,10 @@ a {
 .viewport-border {
     border: 2px solid black;
     border-radius: .5rem;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     box-sizing: border-box;
-    position: fixed;
+    /* position: fixed; */
     background-color: var(--background-color);
 }
 
@@ -60,7 +61,7 @@ a {
 .window-wrapper {
     display: flex;
     flex-wrap: wrap;   
-    
+    height: 100%;
 }
 
 .window {
@@ -70,11 +71,38 @@ a {
 .window-header {
     border: 1px solid var(--grey-color);
     background-color: var(--white-color);
+    padding: 5px 0; 
 }
 
 #about {
     margin: 5% 0 0 5%;
 
     width: 50%;
-    height: 35%;
+    height: 250px;
+}
+
+#window-image {
+    margin: 7% 5% 0 5%;
+
+    width: 30%;
+    height: 270px;
+}
+
+#system-folder .window-header {
+    background-color: var(--light-grey-color);
+}
+
+#system-folder {
+    margin: 3% auto 3% auto;
+
+    width: 70%;
+    height: 250px;
+}
+
+.window-title {
+    text-align: center;
+}
+
+.window-body {
+    padding: 0 3rem;
 }
