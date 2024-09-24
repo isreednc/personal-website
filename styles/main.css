@@ -47,6 +47,34 @@ a {
     padding: 0 1rem;
 }
 
+.nav-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #logo-link {
     padding: 0 2rem 0 2rem;
+}
+
+.window-wrapper {
+    display: flex;
+    flex-wrap: wrap;   
+    
+}
+
+.window {
+    background-color: var(--white-color);
+}
+
+.window-header {
+    border: 1px solid var(--grey-color);
+    background-color: var(--white-color);
+}
+
+#about {
+    margin: 5% 0 0 5%;
+
+    width: 50%;
+    height: 35%;
 }
