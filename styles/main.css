@@ -76,6 +76,8 @@ header {
     display: flex;
     flex-wrap: wrap;   
     height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .window {
@@ -99,12 +101,23 @@ header {
     text-align: center;
 }
 
+.exit {
+    position: absolute;
+    height: 20px;
+    right: 10px;
+    top: 8px;
+
+}
+
 #about {
     margin: 5% 0 0 5%;
 
     width: 50%;
-    height: 32vh;
+    height: fit-content;
+    min-height: 32vh;
     max-height: 400px;
+    overflow: scroll;
+    flex-grow: 1;
 }
 
 #window-image {
@@ -143,7 +156,6 @@ header {
 
     width: 70%;
     height: 40vh;
-    
 
     position: relative;
     bottom: 10px;
@@ -151,11 +163,23 @@ header {
     border: none;
 }
 
+
 #system-folder .window-body {
     height: 100%;
     border-right: 4px solid black;
     border-bottom: 4px solid black;
     border-left: 3px solid darkslategray;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.folder-icon {
+    width: 80px;
+}
+
+.folder-icon img {
+    width: 100%;
 }
 
 #system-folder .folder-info {
