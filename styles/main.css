@@ -108,12 +108,25 @@ header {
 }
 
 #window-image {
-    margin: 7% 9% 0 5%;
+    margin: 6% 9% 0 5%;
 
     width: 25%;
-    height: 27vh;
+    height: 29vh;
     max-width: 400px;
     max-height: 320px;
+}
+
+#window-image .window-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#window-image img {
+    width: 80%;
+    height: auto;
+    min-width: 120px;
 }
 
 #system-folder .window-header {
@@ -186,6 +199,38 @@ header {
     height: 23px;
     width: auto;
     padding-top: 2px;
+}
+
+@media (max-width: 500px) {
+    .window-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #window-image {
+        margin: 0;
+        width: fit-content;
+        max-width: 300px;
+        height: fit-content;
+    }
+
+    #window-image .window-body {
+        width: fit-content;
+        height: fit-content;
+    }
+
+
+    #sytem-folder {
+        margin: 0;
+    }
+
+    #about {
+        margin: 50px 0 0 0 ;
+        width: 80vw;
+        height: fit-content;
+    }
 }
 
 /* projects.hmtl */
